@@ -16,11 +16,13 @@ import { JtaDropdownComponent } from './jta-dropdown/jta-dropdown.component';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { TjsMultiplicationComponent } from './tjs-multiplication/tjs-multiplication.component';
 
 @NgModule({
   declarations: [
-    AppComponent
-    , PizzaToppingsComponent, JtaDropdownComponent
+    AppComponent,
+    PizzaToppingsComponent,
+    JtaDropdownComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,9 @@ import { MatFormFieldModule } from '@angular/material/form-field';
     ReactiveFormsModule,
     MatInputModule,
     MatSelectModule,
-    MatFormFieldModule
+    MatFormFieldModule,
+    PizzaToppingsComponent,
+    TjsMultiplicationComponent
   ],
   providers: [
     provideAnimationsAsync()
